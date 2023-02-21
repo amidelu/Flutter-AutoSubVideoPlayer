@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dynamic_color/dynamic_color.dart';
+import 'package:sub_video_player/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         }
         return MaterialApp(
           title: 'Auto Sub Player',
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
             useMaterial3: true,
             colorScheme: lightColorScheme,
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
             colorScheme: darkColorScheme,
           ),
-          // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          home: const Dashboard(),
         );
       },
     );
